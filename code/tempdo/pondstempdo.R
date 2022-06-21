@@ -32,7 +32,7 @@ p2 = ggplot(raw |> filter(pond %in% ponds[11:20])) +
 
 p1 + p2 + plot_layout(guides = 'collect') &
   theme(legend.position = 'bottom')
-ggsave('figures/pondsdo.png', height = 9, width = 6.5, dpi = 500, units = 'in')
+ggsave('figures/profiles/pondsdo.png', height = 9, width = 6.5, dpi = 500, units = 'in')
 
 
 
@@ -60,7 +60,7 @@ p4 = ggplot(raw |> filter(pond %in% ponds[11:20])) +
 
 p3 + p4 + plot_layout(guides = 'collect') &
   theme(legend.position = 'bottom')
-ggsave('figures/pondscond.png', height = 9, width = 6.5, dpi = 500, units = 'in')
+ggsave('figures/profiles/pondscond.png', height = 9, width = 6.5, dpi = 500, units = 'in')
 
 p5 = ggplot(raw |> filter(pond %in% ponds[1:10])) +
   geom_ribbon(aes(x = Depth, ymin = 0, ymax = Temp_C, group = DATE, fill = season), 
@@ -86,5 +86,5 @@ p6 = ggplot(raw |> filter(pond %in% ponds[11:20])) +
 
 p5 + p6 + plot_layout(guides = 'collect') &
   theme(legend.position = 'bottom')
-ggsave('pondstemp.png', height = 9, width = 6.5, dpi = 500, units = 'in')
+ggsave('figures/profiles/pondstemp.png', height = 9, width = 6.5, dpi = 500, units = 'in')
 
