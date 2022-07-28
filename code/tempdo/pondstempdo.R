@@ -5,6 +5,7 @@ library(patchwork)
 raw = read_csv('data/tempdo/tempdo.csv') |> 
   mutate(season = case_when(month(DATE) <= 3 ~ 'winter',
                             month(DATE) > 3 ~ 'summer'))
+
 ponds = unique(raw$pond)
 
 
@@ -87,4 +88,5 @@ p6 = ggplot(raw |> filter(pond %in% ponds[11:20])) +
 p5 + p6 + plot_layout(guides = 'collect') &
   theme(legend.position = 'bottom')
 ggsave('figures/profiles/pondstemp.png', height = 9, width = 6.5, dpi = 500, units = 'in')
+
 
