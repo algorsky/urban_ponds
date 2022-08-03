@@ -9,11 +9,6 @@ chloride = read_csv('data/ancillary/chloride.csv')|>
 ponds = unique(chloride$pond)
 
 
-ggplot(chloride)+
-  geom_point(aes(x = date, y = chloride_mgL))+
-  facet_wrap(~season, scales = "free")
-
-
 p1 = ggplot(chloride |> filter(pond %in% ponds[1:10])) +
   geom_point(aes(x = date, y = chloride_mgL, color = season)) +
   scale_color_manual(values = c('red4','lightblue4')) +
