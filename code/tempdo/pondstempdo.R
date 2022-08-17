@@ -6,6 +6,7 @@ raw = read_csv('data/tempdo/tempdo.csv') |>
   mutate(season = case_when(month(DATE) <= 3 ~ 'winter',
                             month(DATE) > 3 ~ 'summer'))
 
+
 ponds = unique(raw$pond)
 
 
@@ -71,7 +72,7 @@ p5 = ggplot(raw |> filter(pond %in% ponds[1:10])) +
   coord_flip(expand = 0) +
   scale_x_reverse() +
   ylab('Temp (°C)') +
-  facet_grid(pond~season, scales = 'free_y') +
+  facet_grid(pond~season, scales = 'free') +
   theme_bw(base_size = 9)
 
 p6 = ggplot(raw |> filter(pond %in% ponds[11:20])) +
@@ -82,7 +83,7 @@ p6 = ggplot(raw |> filter(pond %in% ponds[11:20])) +
   coord_flip(expand = 0) +
   scale_x_reverse() +
   ylab('Temp (°C)') +
-  facet_grid(pond~season, scales = 'free_y') +
+  facet_grid(pond~season, scales = 'free') +
   theme_bw(base_size = 9)
 
 p5 + p6 + plot_layout(guides = 'collect') &
