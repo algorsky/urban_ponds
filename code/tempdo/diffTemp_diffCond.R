@@ -143,6 +143,7 @@ ggplot(dplyr::filter(dens_water, season == "summer"))+
   facet_wrap(~pond)+
   theme_bw(base_size = 12)+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+ggsave("figures/dg_summer.png", width = 10, height = 8, units = 'in')
 
 #Winter literature doesn't use one cutoff (Gray et al. 2020- 0.05 in the middle)
 ggplot(dplyr::filter(dens_water, season == "winter"))+
@@ -153,8 +154,7 @@ ggplot(dplyr::filter(dens_water, season == "winter"))+
   facet_wrap(~pond)+
   theme_bw()+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-
-ggsave("figures/dg_summer.png", width = 10, height = 8, units = 'in')
+ggsave("figures/dg_winter.png", width = 10, height = 8, units = 'in')
 
 pond_wd<- temp_do%>%
   filter(pond == pond_name)%>%
