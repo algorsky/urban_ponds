@@ -49,7 +49,7 @@ co2_plot<-ggplot(dplyr::filter(gas_seasons, pond != "KP"), aes(x = as.factor(pon
   ylab(expression(paste('Dissolved Carbon Dioxide (',mu,'mol ','L'^-1, ')')))+
   xlab("")+
   scale_fill_manual(values = c("forestgreen", "blue2"))+
-  theme_bw(base_size = 20)+
+  theme_bw(base_size = 12)+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), legend.position = "none")
 
 co2_kp<-ggplot(dplyr::filter(gas_seasons, pond == "KP"), aes(x = as.factor(pond), y = dissolvedCO2 *1000000, fill = season, alpha = 0.3))+
@@ -71,7 +71,7 @@ ch4_plot<-ggplot(dplyr::filter(gas_seasons, pond != "KP"), aes(x = as.factor(pon
   ylab(expression(paste('Dissolved Methane (',mu,'mol ','L'^-1, ')')))+
   xlab("")+
   scale_fill_manual(values = c("forestgreen", "blue2"))+
-  theme_bw(base_size = 20)+
+  theme_bw(base_size = 12)+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), legend.position = "none")
 
 ch4_kp<-ggplot(dplyr::filter(gas_seasons, pond == "KP"), aes(x = as.factor(pond), y = dissolvedCH4 *1000000, fill = season, alpha = 0.3))+
@@ -93,7 +93,7 @@ n2o_plot<-ggplot(gas_seasons, aes(x = as.factor(pond), y = dissolvedN2O *1000000
   ylab(expression(paste('Dissolved Nitrous Oxide (',mu,'mol ','L'^-1, ')')))+
   xlab("")+
   scale_fill_manual(values = c("forestgreen", "blue2"))+
-  theme_bw(base_size = 20)+
+  theme_bw(base_size = 12)+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), legend.position = "none")
 
 
@@ -104,7 +104,7 @@ CO2_plot<-ggplot() +
   xlab("")+
   ylab(expression(paste('Dissolved Carbon Dioxide (',mu,'mol ','L'^-1, ')')))+
   scale_fill_manual(values = c("forestgreen", "blue2"))+
-  theme_bw(base_size = 18)+
+  theme_bw(base_size = 11)+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), legend.position = "none")
   
 CH4_plot<-ggplot(gd, aes(x = as.factor(pond), y = CH4_mean, fill = season)) + 
@@ -127,9 +127,9 @@ N2O_plot<-ggplot(gd, aes(x = as.factor(pond), y = N2O_mean, fill = season)) +
   
 
 
-plot<- co2 /ch4 /n2o
+plot<- co2_plot /ch4_plot /n2o_plot
 
-ggsave("figures/summer22gas.png", width = 12, height = 10.5, units = 'in', plot)
+ggsave("figures/summer22gas.png", width = 8, height = 12, units = 'in', plot)
 
 ggsave("figures/jasm/n20.png", width = 8, height = 6, units = 'in', n2o_plot)
 ggsave("figures/jasm/co2.png", width = 10, height = 6, units = 'in', co2_figure)
