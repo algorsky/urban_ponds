@@ -1,6 +1,8 @@
 library(tidyverse)
 library(patchwork)
+library(lubridate)
 library(rLakeAnalyzer)
+library(dplyr)
 
 #Import data and add season column
 temp_do = read_csv('data/tempdo/tempdo.csv') |> 
