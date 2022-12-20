@@ -34,7 +34,7 @@ p2 = ggplot(raw |> filter(pond %in% ponds[11:20])) +
 
 p1 + p2 + plot_layout(guides = 'collect') &
   theme(legend.position = 'bottom')
-ggsave('figures/profiles/pondsdo.png', height = 9, width = 6.5, dpi = 500, units = 'in')
+#ggsave('figures/profiles/pondsdo.png', height = 9, width = 6.5, dpi = 500, units = 'in')
 
 
 

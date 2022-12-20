@@ -70,7 +70,7 @@ winterDiff<-ggplot(dplyr::filter(profile, season == "winter" & diffCond > -1500)
   theme_bw()
 library(ggpubr)
 ggarrange(summerDiff, winterDiff, ncol = 2, common.legend= TRUE, legend = "bottom")
-ggsave('figures/profiles/diffTemp_diffCond.png', height = 6, width = 10, dpi = 500, units = 'in')
+#ggsave('figures/profiles/diffTemp_diffCond.png', height = 6, width = 10, dpi = 500, units = 'in')
 
 
 #Calculate buoyancy frequency per pond per sampling day
@@ -145,7 +145,7 @@ ggplot(dplyr::filter(dens_water, season == "summer"))+
   facet_wrap(~pond)+
   theme_bw(base_size = 12)+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-ggsave("figures/dg_summer.png", width = 10, height = 8, units = 'in')
+#ggsave("figures/dg_summer.png", width = 10, height = 8, units = 'in')
 
 #Winter literature doesn't use one cutoff (Gray et al. 2020- 0.05 in the middle)
 ggplot(dplyr::filter(dens_water, season == "winter"))+
@@ -156,13 +156,9 @@ ggplot(dplyr::filter(dens_water, season == "winter"))+
   facet_wrap(~pond)+
   theme_bw()+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-ggsave("figures/dg_winter.png", width = 10, height = 8, units = 'in')
+#ggsave("figures/dg_winter.png", width = 10, height = 8, units = 'in')
 
-pond_wd<- temp_do%>%
-  filter(pond == pond_name)%>%
-  mutate(depth = paste('wtr_',Depth, sep = ""))%>%
-  select(DATE, depth, Temp_C)%>%
-  pivot_wider(names_from = depth, values_from = Temp_C)
+
 
 
 

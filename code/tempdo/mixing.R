@@ -20,8 +20,8 @@ ggplot(plot)+
   xlab("Area (ha)")+
   scale_fill_manual(values = c("darkslategray3", "skyblue4", "khaki2","black"), name = "")+
   scale_shape_manual(values = c(21, 21, 21, 20), name = "")+
-  theme_bw(base_size = 12) +
+  theme_bw(base_size = 9) +
   theme(
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank())
-ggsave('figures/mixing/comparison.png', height = 6, width = 8, dpi = 500, units = 'in')
+ggsave('figures/mixing/comparison.png', height = 3, width = 3.5, dpi = 500, units = 'in')
