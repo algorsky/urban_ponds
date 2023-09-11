@@ -1,10 +1,12 @@
 library(tidyverse)
 library(lubridate)
 library(patchwork)
-
+setwd("/Users/adriannagorsky/Documents/urban_pond_mixing/urban_ponds/")
 raw = read_csv('data/tempdo/tempdo.csv') |> 
   mutate(season = case_when(month(DATE) <= 3 ~ 'winter',
-                            month(DATE) > 3 ~ 'summer'))
+                            month(DATE) > 3 ~ 'summer'))%>%
+  mutate(sampling = ifelse(DATE > as.Date("2022-01-31"), "3",
+                           ifelse(DATE < as.Date("2022-01-25"), "1", "2")))
 
 
 ponds = unique(raw$pond)
@@ -13,7 +15,7 @@ ponds = unique(raw$pond)
 p1 = ggplot(raw |> filter(pond %in% ponds[1:10])) +
   geom_ribbon(aes(x = Depth, ymin = 0, ymax = DO_Percent, group = DATE, fill = season), 
               alpha = 0.4) +
-  geom_hline(yintercept = 100, linetype = 2, size = 0.2) +
+  #geom_hline(yintercept = 100, linetype = 2, size = 0.2) +
   scale_fill_manual(values = c('red4','lightblue4')) +
   coord_flip(expand = 0) +
   scale_x_reverse() +
@@ -91,3 +93,25 @@ p5 + p6 + plot_layout(guides = 'collect') &
 ggsave('figures/profiles/pondstemp.png', height = 9, width = 6.5, dpi = 500, units = 'in')
 
 
+ggplot(dplyr::filter(raw, DATE < as.Date("2021-06-15")))+
+  geom_point(aes(x = Temp_C, y = Depth))+
+  geom_path(aes(x = Temp_C, y = Depth, group = DATE, color = (sampling)))+
+  scale_y_reverse()+
+  facet_wrap(~pond, scales = "free_y")+
+  theme_bw()
+
+ggplot(dplyr::filter(raw, DATE < as.Date("2021-10-15") & pond %in% "DCSW3"))+
+  geom_point(aes(x = DO_Percent, y = Depth, color = DATE))+
+geom_path(aes(x = DO_Percent, y = Depth, group = DATE, color = DATE))+
+  scale_color_viridis_c()+
+  scale_y_reverse()+
+  theme_bw()
+
+ggplot(dplyr::filter(raw, DATE < as.Date("2021-10-15") & pond %in% "DCSW1"))+
+  geom_point(aes(x = Temp_C, y = Depth, color = DATE))+
+  geom_path(aes(x = Temp_C, y = Depth, group = DATE, color = DATE))+
+  scale_color_viridis_c()+
+  scale_y_reverse()+
+  theme_bw()
+
+ggsave('figures/profiles/winter_temp.png', height = 10, width = 12, dpi = 500, units = 'in')

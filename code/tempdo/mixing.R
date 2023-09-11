@@ -24,4 +24,4 @@ ggplot(plot)+
   theme(
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank())
-ggsave('figures/mixing/comparison.png', height = 3, width = 3.5, dpi = 500, units = 'in')
+ggsave('figures/mixing/comparison.png', height = 3, width = 4, dpi = 500, units = 'in')

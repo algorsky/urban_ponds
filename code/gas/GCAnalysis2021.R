@@ -51,7 +51,13 @@ tidy.dat.out.summer2021 <- def.calc.sdg.conc(as.data.frame(dat)) %>%
 
 #write.csv(tidy.dat.out.summer2021, 'data/gas/tidy.summer21_01.csv')
 
+dat.sat = read_csv('data/gas/sdg.sat/dat_summer_LP.csv')
+dat.out <- def.calc.sdg.conc(as.data.frame(dat)) %>%
+  select(pond,date,depth,dissolvedCO2,dissolvedCH4,dissolvedN2O) %>% 
+  gather(value="value",key="parameter",-pond,-date,-depth)
 
+tidy.dat.out.summer2021 <- def.calc.sdg.conc(as.data.frame(dat)) %>%
+  select(pond,date,depth,dissolvedCO2,dissolvedCH4, dissolvedN2O)
 
 
 #Function Dissolved Gas concentration calculations
