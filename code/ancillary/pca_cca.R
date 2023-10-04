@@ -8,9 +8,6 @@ library(ggtext)
 
 
 ponds<- read_csv("data/ancillary/update_data.csv")
-setNames(c('Summer Bottom DO','Summer Surface DO','Summer DOC', "Summer Chl a", "Summer SRP",
-           'Floating Macrophyte','Winter Bottom DO','Winter Surface DO','Winter DOC', "Winter SRP",
-           "Winter Chl a", "White Ice"))
 
 df.dobottom<- ponds%>%
   filter(season == "winter")%>%
@@ -53,3 +50,8 @@ head(summary_allponds)
 ggplot(ponds2, aes(PC1, PC2, col = pond, fill = pond))+
   stat_ellipse(geom = "polygon", col = "black", alpha = 0.5)+
   geom_point(shape = 21, col = "black")
+
+
+#setNames(c('Summer Bottom DO','Summer Surface DO','Summer DOC', "Summer Chl a", "Summer SRP",
+      #     'Floating Macrophyte','Winter Bottom DO','Winter Surface DO','Winter DOC', "Winter SRP",
+        #   "Winter Chl a", "White Ice"))
