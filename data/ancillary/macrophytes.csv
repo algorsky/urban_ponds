@@ -1,0 +1,99 @@
+﻿sampledate,pond_id,openwater,emergent,floating,substrate,submergent,algae,Emergent Type,Floating Type,Submergent Type,Algae Type
+2021-06-02,DOBA7,97,0,0,0,2,0,,,curly pondweed,
+2021-06-02,OPP-E,96,0,1,0,15,0,,lily pads,coontail,
+2021-06-03,LM-ARB,95,1,0,0,0,0,"pickerelweed, common water hyacinth",duckweed,,
+2021-06-03,UM-ARB,90,5,0,0,0,0,"pickerelweed, common water hyacinth",,,
+2021-06-07,CAP,86,7,7,88,5,7,broadleaf cattail,"duckweed, common watermeal",horned pond weed,unknown (likely green filamentous)
+2021-06-07,DOBA4,63,15,22,100,0,0,"simplestem burr reed, iris, broadleaf arrow head, junus",long leaf pond weed,,
+2021-06-07,DOBA5,100,0,0,0,0,100,,,,unknown (likely filamentous)
+2021-06-08,ALC,95,5,0,0,0,10,"broadleaf arrow head, cattails","duckweed, common watermeal","coontail, western waterweed, horned pond weed",unknown (likely filamentous)
+2021-06-08,ELV,95,2,3,0,0,0,"braodleaf arrow head, lakeshore bullrush",pondweed,,
+2021-06-09,DCSW1,77,15,7,0,100,1,"broadleaf arrow head, cattails, juncus/bullrush",duckweed,curly leaf pondweed,unknown (likely filamentous)
+2021-06-09,DCSW2,30,1,70,0,90,75,juncus,duckweed,"coontail, cury leaf pondweed, eurasian watermilfoil",
+2021-06-09,DCSW3,20,0,0,0,80,0,"broad leaf cattail, juncus",duckweed,"eurasian milfoil, curly leaf pond weed, horned pond weed",
+2021-06-10,DOBA8,99,0,1,0,0,3,,pondweed,,bluegreen mats
+2021-06-10,HP-UW,92,7,0,0,40,0,broadleaf cattail,duckweed,"coontail, pondweed, curl leaf pondweed",
+2021-06-10,MDT,99,1,0,0,2,10,"braodleaf cattail, juncus/bullrush",pondweed,coontail,
+2021-06-11,KP,1,30,0,99,0,40,broadleaf cattail,"duckweed, common watermeal, white water lily",,blue green
+2021-06-11,L60-UW,5,40,55,0,90,0,"juncus, cattails, pickerelweed","duckweed, common watermeal","coontail, horned pondweed",
+2021-06-11,O-N,99,1,1,0,0,3,juncus/bullrush,duckweed,"pondweed, coontail, horned pondweed",green (filamentous)
+2021-06-11,O-S,94,5,2,0,20,21,"juncus/bullrush, broadleaf catail","pondweed, duckweed","coontail, horned pondweed",
+2021-06-14,DOBA7,100,0,0,95,5,1,,,curly pondweed,green
+2021-06-14,OPP-E,95,0,5,88,12,0,,white water lily,coontail,
+2021-06-14,OPP-W,70,30,0,0,1,0,,lily pad,coontail,
+2021-06-15,ALC,10,5,85,0,30,70,braodleaf cattail,"duckweed, common watermeal","horned pondweed, coontail, waterweed","brownish algae, green algae"
+2021-06-15,LM-ARB,95,0,1,1,1,0,,duckweed,coontail,
+2021-06-15,UM-ARB,97,3,0,1,0,0,"pickerelweed, calamus, braodlead arrowhead",,coontail,
+2021-06-16,CAP,75,0,25,93,5,2,,"duckweed, common watermeal",horned pondweed,filamentous algae
+2021-06-16,DOBA4,70,30,0,78,20,2,"juncus, broadleaf arrowhead, broadleaf cattail",pondweed,,filimentous green algae
+2021-06-16,DOBA5,100,0,0,0,0,100,,,,"blue green algae mats, green suspended algae"
+2021-06-17,DOBA8,97,0,3,0,0,2,,pondweed,,blue green algae mats
+2021-06-17,ELV,80,20,0,95,3,2,"juncus, broadleaf cattails, broadleaf arrowhead",pondweed,,filamentous algae
+2021-06-17,MDT,100,0,0,70,15,15,,slender pondweed,coontail,"filimentous green, red ""dots"" - red algae"
+2021-06-18,HP-UW,85,0,15,0,10,0,,"pondweed, duckweed","coontail, horned pondweed, curly leaf pondweed",
+2021-06-18,L60-UW,5,30,75,2,96,2,"broadleaf cattail, broadleaf arrowhead, pickerel weed","duckweed, common watermeal","coontail, horned pondweed",filimentous green algae
+2021-06-21,DCSW1,50,30,20,0,0,0,"braodleaf cattail, juncus","duckweed, common watermeal","curly pondweed, euraian water milfoil",filamentous green
+2021-06-21,DCSW2,80,20,0,85,15,1,"braodleaf cattail, juncus",,"curly pondweed, euraian water milfoil",filamentous green
+2021-06-21,DCSW3,60,5,35,60,40,40,"broadleaf cattail, juncus","duckweed, common watermeal","water milfoil, coontail, curly pondweed, horned pondweed",green fillimentous
+2021-06-22,KP,0,70,30,0,0,5,"white water lily, broad leaf cattail","duckweed, common watermeal",,mats of blue green algae
+2021-06-22,O-N,95,5,0,95,5,0,,pondweed,coontail,
+2021-06-22,O-S,78,20,2,60,40,0,"braodleaf cattail, juncus",duckweed,"coontail, pondweed",
+2021-06-29,DOBA7,100,0,0,100,0,0,,,,
+2021-06-29,HP-UW,90,1,10,80,20,20,Broadleaf cattails,"duckweed,commonwatermeal, lilypad","curly pondweed, coontail, pondweed",Brown algae
+2021-06-29,OPP-E,80,0,20,0,0,0,,,,
+2021-06-29,OPP-W,75,5,20,95,0,5,broadleaf cattails,lilypads,N/A,blue green mats
+2021-06-30,DOBA8,95,0,5,95,5,1,,,,blue green mats
+2021-06-30,ELV,80,10,10,96,2,2,"Broadleaf arrowhead, Juncus",duckweed,"coonstail,pondweed",green filamentous
+2021-06-30,LM-ARB,100,0,0,100,0,0,,,,
+2021-06-30,MDT,85,5,15,90,10,0,"Broadleaf cattails, Juncus",,"coontail, pondweed, slender pondweed","greem filamentous, blue green mats"
+2021-06-30,UM-ARB,90,10,0,95,5,0,"broadleaf cattails, broadleaf arrowheads, juncus, pickerelweed",,coontail,
+2021-07-01,CAP,85,25,70,20,80,10,,"duckweed, common watermeal",horned pondweed,filamentous algae
+2021-07-01,DCSW1,90,10,0,50,50,40,"broadleaf cattail, juncus","duckweed, common watermeal","curly pondweed, eurasian water milfoil",filamentous green
+2021-07-01,DCSW2,95,0,5,100,0,15,,small duckweed,,filamentous
+2021-07-01,DCSW3,70,30,5,60,40,25,"broadleaf cattail, juncus","duckweed, common watermeal","water milfoil, coontail, curly pondweed, horned pondweed",green fillimentous
+2021-07-01,DOBA4,60,40,60,100,0,0,"juncus, broadleaf arrowhead, broadleaf cattail",pondweed,,
+2021-07-01,DOBA5,100,0,0,100,0,0,,,,
+2021-07-01,O-N,98,0,2,100,0,1,,pondweed,,
+2021-07-01,O-S,98,0,2,90,10,0,,,,
+2021-07-02,ALC,90,0,10,20,80,20,,,,
+2021-07-02,KP,22,90,8,0,0,0,,,,
+2021-07-02,L60-UW,5,35,60,0,90,10,,,,
+2021-07-12,DOBA7,100,0,60,90,10,0,,,,
+2021-07-12,OPP-E,90,0,10,98,2,2,,,,
+2021-07-13,L60-UW,10,60,20,10,90,0,,,,
+2021-07-13,LM-ARB,100,0,0,95,5,2,,,,
+2021-07-13,UM-ARB,80,20,0,100,0,5,,,,
+2021-07-14,KP,2,28,70,99,0,1,broadleaf cattails,"white lily, duckweed, common watermeal",,
+2021-07-14,O-N,95,0,10,100,0,0,,,,
+2021-07-14,O-S,60,1,40,40,0,0,,,,
+2021-07-16,CAP,20,20,60,60,30,10,cattails,"duckweed, common watermeal","horned pond weed, waterweed",green filamentous
+2021-07-16,DOBA4,60,20,20,100,0,0,"flower, cattail, arrowhead, juncus",pondweed,,
+2021-07-16,DOBA5,100,0,0,2,0,98,,,,"blue green, green filamentous almost florecent"
+2021-07-19,DCSW1,45,40,15,95,0,5,"cattails, juncus","duckweed, common watermeal",,green filamentous
+2021-07-19,DCSW2,75,5,20,0,0,20,,,"coontail, horned pondweed",green filamentous
+2021-07-19,DCSW3,70,10,20,20,40,40,cattails,"duckweed, common watermeal","eurasian water milfoil, coontail",green filamentous
+2021-07-20,DOBA8,85,0,15,85,0,15,,pondweed,,"blue green, green filamentous"
+2021-07-20,ELV,88,10,2,75,20,5,"arrowheads, juncus",pondweed and duckweed,,bluegreen mats
+2021-07-20,MDT,70,5,25,90,5,5,"cattails, juncus",pondweed,"coontail, horned pondweed",green filamentous
+2021-07-21,ALC,40,30,30,2,49,49,"cattails, arrowheads",duckweed and common watermeal,"coontail, waterweed",green filamentous
+2021-07-26,DOBA8,90,0,0,80,10,10,,,pondweed,"green filamentous, blue green"
+2021-07-26,L60-UW,0,50,50,0,100,0,"cattails, pickerel weed","duckweed,common watermeal",curly pondweed,
+2021-07-26,MDT,90,10,0,65,15,20,cattails,pondweed,"pondweed, coontail",green filamentous
+2021-08-02,ALC,1,20,80,0,50,50,,,,
+2021-08-03,DOBA7,100,0,0,100,0,0,,,,
+2021-08-03,ELV,65,20,15,90,0,10,,,,
+2021-08-03,KP,10,20,70,90,0,10,,lilypad and duck weed,,
+2021-08-03,O-N,100,0,0,98,2,0,,,,
+2021-08-03,O-S,100,0,0,30,30,40,,,,
+2021-08-03,OPP-E,85,0,15,100,0,0,,,,
+2021-08-03,OPP-W,50,10,40,100,0,0,,,,
+2021-08-04,CAP,5,20,75,75,20,5,,,,
+2021-08-04,DCSW1,78,20,2,75,10,15,,,,
+2021-08-04,DCSW2,10,10,80,10,20,70,,,,
+2021-08-04,DCSW3,80,10,2,20,40,40,,,,
+2021-08-04,DOBA4,40,20,40,100,0,0,,,,
+2021-08-04,DOBA5,100,0,0,0,0,100,,,,
+2021-08-05,DOBA8,95,0,5,98,0,2,,pondweed,,bluegreen and green filamentous
+2021-08-05,HP-UW,95,0,5,35,50,15,,"duckweed, very few lily pads",,
+2021-08-05,L60-UW,0,40,60,0,90,10,,,,
+2021-08-05,MDT,60,25,25,80,10,10,,,,

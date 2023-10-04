@@ -5,9 +5,9 @@ library(dplyr)
 
 data<- read_csv( "data/ancillary/allcomparedata.csv")
 plants<- read_csv("data/ancillary/extra_macrophyte.csv")
-
-data_join<- data%>%
-  left_join(plants, by = "pond")%>%
+floating<- plants[,c(1,2)]
+data_join<- data_all%>%
+  left_join(floating, by = "pond")%>%
   mutate(sampling = ifelse(month(DATE) == 2, 8, 
                            ifelse(DATE < as.Date("2022-01-18") & year(DATE) == 2022, 6,
                                   ifelse(DATE > as.Date("2022-01-18") & DATE < as.Date("2022-02-01"),
@@ -39,8 +39,7 @@ floating<- plants%>%
 macrophyte<- ggplot(data_winter)+
   geom_point(aes(x = Floating, y = Bottom_DO), size = 2.5)+
   geom_path(aes(x = Floating, y = Bottom_DO, group = pond))+
-  #ylab("Winter bottom water oxygen saturation (%)")+
-  ylab("")+
+  ylab("Winter bottom water\n oxygen saturation (%)")+
   xlab("Summer max floating\n macrophyte coverage (%)")+
   geom_hline(yintercept = 100, linetype = "dashed")+
  # ggtitle("Macrophyte State")+

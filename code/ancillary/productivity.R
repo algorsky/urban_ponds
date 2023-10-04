@@ -56,7 +56,7 @@ doc_do<-ggplot(filter(data_join, season == "winter"))+
   xlab(expression(paste('Summer mean DOC (mg ','L'^-1, ')')))+
   geom_hline(yintercept = 100, linetype = "dashed")+
   ylab("")+
- # ylab("Winter bottom water oxygen saturation (%)")+
+  ylab("Winter bottom water\n oxygen saturation (%)")+
   theme_bw(base_size = 16)+
   theme(panel.border = element_rect(colour = "black", fill=NA), panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))
@@ -186,12 +186,12 @@ chla_DO_log<-ggplot(filter(data_join, season == "winter"))+
   scale_x_continuous(trans='log10') +
   #ggtitle("Turbid State")+
   geom_hline(yintercept = 100, linetype = "dashed")+
-  ylab("Winter bottom water oxygen saturation (%)")+
+  ylab("Winter bottom water\n oxygen saturation (%)")+
   # scale_color_manual(values = c("lightgray", "lightblue", "darkblue"), name = "Winter Sampling Event")+
   theme_bw(base_size = 16)+
   theme(panel.border = element_rect(colour = "black", fill=NA), plot.title = element_text(hjust = 0.5), panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))
 
 
-chla_DO_log + macrophyte + doc_do +plot_annotation(tag_levels = 'A')
-ggsave('figures/draft/summer_productivity.png', height = 5, width = 12, dpi = 500, units = 'in')
+macrophyte + chla_DO_log + srp_summer + doc_do +plot_annotation(tag_levels = 'A')
+ggsave('figures/draft/summer_productivity.png', height = 8, width = 12, dpi = 500, units = 'in')
